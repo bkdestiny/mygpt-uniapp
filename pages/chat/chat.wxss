@@ -1,0 +1,85 @@
+/* pages/chat/chat.wxss */
+/**index.wxss**/
+page{
+  background: #ccc;
+}
+.container{
+}
+.input{
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  height: 50px;
+}
+.input .content{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.input .content input{
+  width:80%;
+}
+.input .content view{
+  font-size: 14px;
+  background: rgb(4, 134, 4);
+  cursor: pointer;
+  font-size: 14px;
+  color:white;
+  width: 160rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.list{
+  padding-top: 26rpx;
+  height: 100%;
+  width: 100%;
+}
+.list .item{
+  display: block;
+  min-height: 60rpx;
+  width: 100%;
+  padding: 35rpx 0;
+  position: relative;
+}
+.list .item-left{
+}
+.list .item-right{
+}
+.list .item-left image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50px;
+  margin:0 25rpx;
+  display: inline-block;
+  float: left;
+}
+.list .item-right image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50px;
+  margin:0 25rpx;
+  display: inline-block;
+  float: right;
+}
+.list .item view{
+  font-size: 14px;
+}
+.list .item-left view{
+  background: #fff;
+  padding: 25rpx 40rpx;
+  border-radius: 20rpx;
+  max-width: 60%;
+  display: inline-block;
+}
+.list .item-right view{
+  background: #fff;
+  padding: 25rpx 40rpx;
+  border-radius: 20rpx;
+  max-width: 60%;
+  display: inline-block;
+  float: right;
+}

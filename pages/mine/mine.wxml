@@ -1,0 +1,10 @@
+<!--pages/mine/mine.wxml-->
+<view>
+<view wx:if="{{userInfo!=null}}" 
+>
+<image  style="width: 200rpx;height: 200rpx;border-radius: 50px;border:1px solid green;position: absolute;left: 35%;top:10%" 
+src="{{userInfo.avatarUrl}}"/>
+</view>
+<view wx:else bindtap="handlerLogin" 
+class="login">登录</view>
+</view>

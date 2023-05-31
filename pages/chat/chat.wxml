@@ -1,0 +1,18 @@
+<!--pages/chat/chat.wxml-->
+<view class="container"> 
+<scroll-view class="list" style="min-height:1000rpx;padding-bottom: 40px;">
+<!-- 聊天消息 -->
+<view class="item {{item.role=='system'?'item-left':'item-right'}}" wx:for="{{messages}}" wx:for-index="index">
+<image wx:if="{{item.role=='system'}}" src="/images/avatar/chatgpt.jpeg"/>
+<image wx:else src="{{userInfo.avatarUrl}}"></image>
+    <view>{{item.content}}</view>
+  <!-- 头像 -->
+</view>
+</scroll-view>
+</view>
+<view class="input">
+<view class="content">
+  <input type="text" value="{{inputVal}}" bindinput="inputVal" placeholder="输入消息..."/>
+  <view bindtap="sendMessage">发送</view>
+</view>
+</view>

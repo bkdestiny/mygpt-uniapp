@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view style="font-size: 28px;position: absolute;top:20%;left: 20%;">欢迎使用AI助手</view>
+</view>

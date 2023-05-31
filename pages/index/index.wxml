@@ -1,0 +1,15 @@
+<view class="container"> 
+<scroll-view class="list" style="min-height:1000rpx;padding-bottom: 40px;">
+<view class="item {{item.role=='system'?'item-system':'item-user'}}" wx:for="{{messages}}">
+  <view wx:if="{{item.role=='user'}}">{{item.content}}</view>
+  <image src="/images/avatar/chatgpt.jpeg"/>
+  <view wx:if="{{item.role=='system'}}">{{item.content}}</view>
+</view>
+</scroll-view>
+</view>
+<view class="input">
+<view class="content">
+  <input type="text" placeholder="输入消息..."/>
+  <view>发送</view>
+</view>
+</view>

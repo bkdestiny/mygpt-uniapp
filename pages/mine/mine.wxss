@@ -1,0 +1,13 @@
+/* pages/mine/mine.wxss */
+.login{
+  width: 300rpx;
+  height: 110rpx;
+  line-height:110rpx;
+  border:1px solid gray;
+  text-align: center;
+  position: absolute;
+  left: 30%;
+  top:30%;
+  font-size: 20px;
+  cursor: pointer;
+}
